@@ -1,0 +1,57 @@
+body{
+    background:#0b0f14;
+    color:#e9eef5;
+    font-family:'Open Sans',sans-serif;
+    line-height:1.8;
+    margin:0;
+  }
+  
+  .section{
+    padding:90px 12%;
+  }
+  
+  h2{
+    font-family:'Montserrat';
+    font-size:2.4rem;
+    margin-bottom:10px;
+  }
+  
+  .subtitle{
+    color:#ff3b3b;
+    margin-bottom:40px;
+  }
+  
+  /* Content cards */
+  .card{
+    background:#141a22;
+    padding:30px;
+    border-radius:16px;
+    margin-bottom:40px;
+  }
+  
+  .card h3{
+    color:#ff3b3b;
+    margin-bottom:15px;
+  }
+  
+  .card ul{
+    padding-left:18px;
+  }
+  
+  .card li{
+    margin-bottom:10px;
+  }
+  
+  .card ul ul{
+    margin-top:12px;
+    color:#9fb0c0;
+  }
+  
+  /* Buttons */
+  .btn{
+    color:#ff3b3b;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:50px;
+  }
+  
