@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mind to Motion - EEG Based LSTM Classification</title>
+  <link rel="stylesheet" href="css/project2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hero / Project Title -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Mind to Motion</h1>
+      <p class="subtitle">EEG-Based Classification of Motor Imagery and Actual Hand Movements Using LSTM Models</p>
+      <p>Senior Project – Undergraduate | <a href="https://doi.org/10.1109/BMEiCON60347.2023.10322025" target="_blank" style="color:var(--accent)">Published IEEE Paper</a></p>
+      <a href="index.html" class="btn" style="margin-top:15px;">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <!-- Clinical Motivation -->
+  <section class="section">
+    <h2>Clinical Motivation</h2>
+    <p>
+      Stroke and neurological injuries often impair voluntary hand movements.  
+      Non-invasive Brain-Computer Interfaces (BCI) using EEG signals can assist motor rehabilitation and control of prosthetic devices.  
+      This project explores differentiating motor imagery from actual hand movements using an LSTM-based EEG classification model.
+    </p>
+  </section>
+
+  <!-- System Architecture -->
+  <section class="section dark">
+    <h2>System Architecture</h2>
+    <p>The overall system pipeline for Mind to Motion:</p>
+    <ul>
+      <li>EEG Acquisition (OpenBCI)</li>
+      <li>Signal Preprocessing & Artifact Removal</li>
+      <li>Feature Extraction</li>
+      <li>LSTM Model Classification</li>
+      <li>Output Interpretation for Motor Rehabilitation</li>
+    </ul>
+  </section>
+
+  <!-- Data Pipeline & Signal Processing -->
+  <section class="section">
+    <h2>Data Pipeline & Signal Processing</h2>
+    <ul>
+      <li>EEG signal acquisition from OpenBCI device</li>
+      <li>Preprocessing: Bandpass filtering and artifact removal using EEGLAB</li>
+      <li>Feature extraction: time-domain and frequency-domain features</li>
+      <li>Segmentation and windowing for LSTM input</li>
+    </ul>
+  </section>
+
+  <!-- LSTM Model Design -->
+  <section class="section dark">
+    <h2>LSTM Model Design</h2>
+    <ul>
+      <li>Built in MATLAB using sequential LSTM architecture</li>
+      <li>Trained to classify motor imagery vs actual hand movement</li>
+      <li>Loss function: cross-entropy; optimizer: Adam</li>
+      <li>Hyperparameters tuned for optimal EEG classification performance</li>
+    </ul>
+  </section>
+
+  <!-- Validation & Results -->
+  <section class="section">
+    <h2>Validation & Results</h2>
+    <p>Performance of the LSTM model:</p>
+    <ul>
+      <li>Motor Imagery vs Actual Hand Movement: 62.5% accuracy</li>
+      <li>Rest vs Actual Hand Movement: 72.5% accuracy</li>
+    </ul>
+    <p>These results demonstrate the model's potential for BCI-assisted motor rehabilitation.</p>
+  </section>
+
+  <!-- Skills Demonstrated -->
+  <section class="section dark">
+    <h2>Skills Demonstrated</h2>
+    <ul>
+      <li><strong>Neurotech:</strong> EEG acquisition, motor imagery paradigms, BCI principles</li>
+      <li><strong>Software & ML:</strong> MATLAB, LSTM model design, feature extraction</li>
+      <li><strong>Clinical Awareness:</strong> Motor rehabilitation relevance</li>
+      <li><strong>Validation & QA:</strong> Accuracy evaluation, signal preprocessing quality checks</li>
+    </ul>
+  </section>
+
+  <!-- Future Improvements -->
+  <section class="section">
+    <h2>Future Improvements</h2>
+    <ul>
+      <li>Integrate multi-channel EEG for better spatial resolution</li>
+      <li>Real-time wearable BCI implementation</li>
+      <li>Closed-loop feedback with rehabilitation devices</li>
+      <li>Increase dataset size for improved model accuracy</li>
+    </ul>
+  </section>
+
+
+  <img src="Assets/paper.JPG" alt="Conference Presentation" class="conference-image">
+  <p style="font-size:14px; text-align:center; margin-top:8px;">
+    2023 15th Biomedical Engineering International Conference (BMEiCON)
+  </p>
+
+  <footer>
+    <p>© 2025 Apoorva Sunil Chakkamallisery• <a href="mailto:apoorvasunil4321@email.com">Email</a> • <a href="https://www.linkedin.com/in/apoorva-sunil">LinkedIn</a> • <a href ="https://github.com/apoorvas-523">GitHub </a></p>
+  </footer>
+  

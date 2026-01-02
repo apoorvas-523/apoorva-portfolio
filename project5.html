@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BLIP Image Classification</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Hero / Project Title -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>BLIP Based Image Classification</h1>
+      <p class="subtitle">BLIP Feature Extraction with Hessian Sharpness Analysis</p>
+      <a href="index.html" class="btn" style="margin-top:15px;">← Back to Portfolio</a>
+    </div>
+  </section>
+
+  <!-- Project Overview -->
+  <section class="section">
+    <h2>Project Overview</h2>
+    <p>
+      This project implements a deep learning image classification pipeline using the 'BLIP: Bootstrapping Language-Image Pre-training' vision-language model
+      as a frozen feature extractor, combined with a linear classifier trained on BLIP embeddings.  
+      Hessian Sharpness analysis is applied to monitor the loss landscape and ensure better generalization.  
+      The system also integrates BLIP captioning for both classification and inference caption generation.
+    </p>
+  </section>
+
+  <!-- Motivation & Goal -->
+  <section class="section dark">
+    <h2>Motivation & Goal</h2>
+    <p>
+      Image classification is a fundamental computer vision problem, and understanding the loss landscape can improve model reliability.  
+      The goal of this project was to combine BLIP embeddings with Hessian Sharpness analysis to create a robust, interpretable, and research-ready pipeline.
+    </p>
+  </section>
+
+  <!-- Dataset & Preprocessing -->
+  <section class="section">
+    <h2>Dataset & Preprocessing</h2>
+    <ul>
+      <li>Main dataset: ALL_SPLIT divided into 70% training, 15% validation, 15% test.</li>
+      <li>Sampled 100 images from "25,000 Cat Images" (Kaggle) and 100 random images from Unsplash random collection.</li>
+      <li>Preprocessing: resized images, normalization, and embedding extraction using BLIP model.</li>
+    </ul>
+  </section>
+
+  <!-- Model Architecture -->
+  <section class="section dark">
+    <h2>Model Architecture</h2>
+    <ul>
+      <li>BLIP vision-language model (Salesforce BLIP-base) used as a frozen feature extractor.</li>
+      <li>Linear classifier trained on BLIP image embeddings.</li>
+      <li>Hessian Sharpness computation applied during training to analyze loss surface flatness.</li>
+      <li>BLIP captioning integrated to generate textual description during inference.</li>
+    </ul>
+  </section>
+
+  <!-- Implementation -->
+  <section class="section">
+    <h2>Implementation Details</h2>
+    <ul>
+      <li>Programming Language: Python (Jupyter Notebook workflow)</li>
+      <li>Frameworks: Hugging Face Transformers (BLIP), PyTorch</li>
+      <li>Loss analysis: Hessian Sharpness tracked to ensure robust convergence</li>
+    </ul>
+  </section>
+
+  <!-- Results & Analysis -->
+  <section class="section dark">
+    <h2>Results & Analysis</h2>
+    <p>
+      Despite a small sample dataset (100 images per class), the pipeline successfully classified images using BLIP embeddings.  
+      Hessian Sharpness analysis helped understand model stability and the loss landscape for better generalization.
+    </p>
+    <p>
+      Integration of BLIP captioning enabled generation of textual descriptions, showing potential for multi-modal inference.
+    </p>
+  </section>
+
+  <!-- Skills Demonstrated -->
+  <section class="section">
+    <h2>Skills Demonstrated</h2>
+    <ul>
+      <li>Deep Learning: Vision-Language Modeling (BLIP), Linear classifier</li>
+      <li>Model Analysis: Hessian Sharpness, loss landscape interpretation</li>
+      <li>Python & PyTorch: Training, evaluation, embedding extraction</li>
+      <li>Research & Reproducibility: GitHub code structuring, dataset split management</li>
+      <li>Computer Vision: Image preprocessing, multi-modal inference</li>
+    </ul>
+  </section>
+
+  <!-- References -->
+  <section class="section dark">
+    <h2>References</h2>
+    <ul>
+      <li>BLIP Model by Salesforce: <a href="https://huggingface.co/Salesforce/blip-image-captioning-base" target="_blank" style="color:var(--accent)">https://huggingface.co/Salesforce/blip-image-captioning-base</a></li>
+      <li>Cat Images Dataset: <a href="https://www.kaggle.com/datasets/tamilselvanarjunan/image1?resource=download" target="_blank" style="color:var(--accent)">Kaggle Dataset</a></li>
+      <li>Unsplash Random Images: <a href="https://www.kaggle.com/datasets/lprdosmil/unsplash-random-images-collection?resource=download" target="_blank" style="color:var(--accent)">Kaggle Dataset</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Apoorva Sunil Chakkamallisery• <a href="mailto:apoorvasunil4321@email.com">Email</a> • <a href="https://www.linkedin.com/in/apoorva-sunil">LinkedIn</a> • <a href ="https://github.com/apoorvas-523">GitHub </a></p>
+  </footer>
+  
+</body>
+</html>
